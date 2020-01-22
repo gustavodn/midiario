@@ -1,0 +1,28 @@
+<?php
+  include('includes/db.php');
+  include('auth.php');
+
+
+  $usuario = $_SESSION['usuario'];
+  			  //Busca todos los usuarios seguidos
+              $sql = "SELECT * FROM seguido WHERE seguidopor = '$usuario'";
+              $eje = pg_query($dbcon, $sql);
+              $codigo = generarCodigo(20);
+              	//Los muestra y repite
+                while ($rw_seguidos = pg_fetch_array($eje)) {
+                	$user = $rw_seguidos['seguido'];
+                	// busca todas las publicaciones (publicas) por cada uno de los usuarios seguidos
+                	$sql2 = "SELECT * FROM entrada WHERE usuario = '$user' AND compartir = 's'";
+                	$eje2 = pg_query($dbcon, $sql2);
+
+                		while($rw_entradasuser = pg_fetch_array($eje2)){
+                			$id_entrada = $rw_entradasuser['id'];
+                			$fecha = $rw_entradasuser['fecha'];
+                			$id = $codigo;
+
+                				$sql = "INSERT INTO tmp_proceso (id_proceso,id_entrada,fecha) VALUES ('$id','$id_entrada','$fecha')";
+                				$sql = pg_query($dbcon, $sql);
+                		}
+                	}
+
+?>

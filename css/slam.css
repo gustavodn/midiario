@@ -1,0 +1,281 @@
+body{
+	padding: 0;
+	margin: 0;
+    font-family: Quicksand;
+}
+
+.barra-superior{
+	width: 100%;
+	height: 5%;
+	background-color: #880015;
+	padding-left: 2%;
+	margin-bottom: 5%;
+  margin-top: 0;
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.bloque-derecho{
+	width: 5%;
+	height: 100%;
+	float: left;
+}
+
+.volver{
+	padding-top: 12px;
+}
+
+.volver a{
+	color: white;
+	text-decoration: solid;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.volver a:hover{
+	color: white;
+	text-decoration: underline;
+	font-weight: 900;
+	font-size: 18px;
+	text-shadow: 2px 2px 5px #000;
+}
+
+.desglose{
+	width: 100%;
+	height: 94%;
+	margin-top: 6%;
+}
+
+.usuario{
+width: 100%;
+text-align: center;
+font-size: 30px;
+color: #880015;
+}
+
+.usuario strong{
+font-weight: 1200;
+}
+
+.btn-slam {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    line-height: 1.42857143;
+    border-radius: 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+    overflow: hidden;
+    width: auto;
+    margin-left:11%;
+}
+
+.btn-slam-ver {
+    color: #fff;
+    background-color: #880015;
+    text-decoration: solid;
+}
+
+.btn-slam-ver:hover{
+	box-shadow: 2px 2px 5px #000;
+}
+
+.btn-slam-ver strong {
+	font-weight: 900 !important;
+}
+
+.bloque-izquierdo{
+  align-content: right;
+  width: auto;
+  margin-left: 89%;
+  margin-top: -29px;
+}
+
+.izquierda{
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	float: left;
+}
+
+.derecha{
+	width: 60%;
+	height: 100%;
+	float: left;
+	border: 3px;
+  margin-left: 30%;
+  color: #880015;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.text-slam {
+    background-color: white;
+    box-shadow: 0;
+    border: none;
+    border-bottom: 3px solid #bebebe;
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+    height: 30px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-family: Quicksand;
+    padding-left: 1%;
+}
+
+.izquierda2{
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	float: left;
+	margin-left: 60%;
+}
+
+.derecha2{
+	margin-left: 2%;
+	width: 60%;
+	height: 100%;
+	float: left;
+	border: 3px;
+    color: #880015;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario {
+  /* --------------------------------------- */
+  /* ----- Radio Button */
+  /* --------------------------------------- */
+  /* --------------------------------------- */
+  /* ----- Checkbox */
+  /* --------------------------------------- */ }
+  .formulario h2 {
+    font-size: 16px;
+    color: #001F3F;
+    margin-bottom: 20px;
+    margin-left: 20px; }
+  .formulario > div {
+    padding: 0px 0; }
+  .formulario .radio label,
+  .formulario .checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    color: #880015;
+    position: relative;
+    padding: 5px 0px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover {
+      background: #880015;
+      color: #fff; }
+    .formulario .radio label:before,
+    .formulario .checkbox label:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: none;
+      border: 3px solid #880015; }
+  .formulario input[type="radio"] {
+    display: none; }
+    .formulario input[type="radio"]:checked + label:before {
+      display: none; }
+    .formulario input[type="radio"]:checked + label {
+      padding: 5px ;
+      background: #880015;
+      border-radius: 2px;
+      color: #fff; }
+  .formulario .checkbox label:before {
+    border-radius: 3px; }
+  .formulario .checkbox input[type="checkbox"] {
+    display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label:before {
+      display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label {
+      background: #FF4136;
+      color: #fff;
+      padding: 5px 15px; }

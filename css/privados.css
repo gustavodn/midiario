@@ -1,0 +1,246 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand !important;
+}
+
+.barra-superior {
+    width: 100%;
+    height: 5%;
+    background-color: #880015;
+    padding-left: 2%;
+    margin-bottom: 5%;
+    margin-top: 0;
+    left: 0;
+    /* Posicionamos la cabecera al lado izquierdo */
+    top: 0;
+    /* Posicionamos la cabecera pegada arriba */
+    position: fixed;
+    /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.bloque-derecho {
+    width: 5%;
+    height: 100%;
+    float: left;
+}
+
+.bloque-izquierdo {
+    width: 10%;
+    height: 100%;
+    float: right;
+    margin-top: -5px;
+    margin-left: 50%;
+}
+
+.volver {
+    padding-top: 12px;
+}
+
+.volver a {
+    color: white;
+    text-decoration: solid;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.volver a:hover {
+    color: white;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 18px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.contener {
+    width: 100%;
+    height: 94%;
+    margin-top: 3.5%;
+}
+
+.izquierda{
+    width: 30%;
+    float: left;
+}
+
+.derecha{
+    width: 70%;
+    float: right;
+}
+
+.separacion1{
+    width: 100%;
+}
+
+.separacion2{
+    width: 100%;
+}
+
+.separacion1 hr {
+    border: 0; 
+    border-bottom: 2px solid #bebebe; 
+    height:0;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.lista-conversaciones{
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+.conver{
+    width: 80%;
+    margin-left: 15%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #880015;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.conver a{
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #880015;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-decoration: solid;
+    font-weight: 900;
+}
+
+.lista-conversaciones hr{
+    border: 0; 
+    border-bottom: 2px solid #880015; 
+    height:0;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.conver .circulo{
+    width: 20px;
+    height: 20px;
+    background-color: #bebebe;
+    border-radius: 15px;
+    margin-left: 80%;
+    margin-top: -5%;
+}
+
+.conver .circulo-activo{
+    width: 20px;
+    height: 20px;
+    background-color: #880015;
+    border-radius: 15px;
+    margin-left: 80%;
+    margin-top: -5%;
+}
+
+.superio{
+    width: 96%;
+    margin-left: 4%;
+}
+
+.supeio-sexo{
+    width: 2%;
+    float: left;
+}
+
+.superio-usuario{
+    width: 96%;
+    float: right;
+    text-align: left;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.centro-mensajes{
+    width: 90%;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.mensaje-rosa{
+    width: auto;
+    max-width: 80%; 
+    height:30px; 
+    background-color:#f0cece;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    color: #000000;
+    font-weight: 900;
+}
+
+.mensaje-gris{
+    width: auto;
+    max-width: 80%; 
+    height:30px; 
+    background-color:#dfdede;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-right: 15px;
+    color: #000000;
+    font-weight: 900;
+    margin-left: 20%;
+    text-align: right;
+}
+
+.text-mensajes{
+    background-color: white;
+    box-shadow: 0;
+    border: none;
+    border-bottom: 3px solid #bebebe;
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    width: 80%;
+    height: 30px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-family: Quicksand;
+    padding-left: 1%;
+    margin-left: 5%;
+}
+
+.text-mensajes:focus{
+    outline: 0px;
+}
+
+.btn-mensajes {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 19px;
+    line-height: 1.42857143;
+    border-radius: 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+    overflow: hidden;
+    width: auto;
+    margin-left: 2%;
+    font-weight: 900;
+}
+
+.btn-mensajes-ver {
+    color: #fff;
+    background-color: #880015;
+    text-decoration: solid;
+}

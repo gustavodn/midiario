@@ -1,0 +1,285 @@
+body{
+	padding: 0;
+	margin: 0;
+  font-family: Quicksand !important;
+}
+
+.barra-superior{
+	width: 100%;
+	height: 5%;
+	background-color: #880015;
+	padding-left: 2%;
+	margin-bottom: 5%;
+  margin-top: 0;
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.bloque-derecho{
+	width: 5%;
+	height: 100%;
+	float: left;
+}
+
+.bloque-izquierdo{
+	align-content: right;
+	width: 93%;
+	position: fixed;	margin-left: 87%;
+}
+
+.volver{
+	padding-top: 12px;
+}
+
+.volver a{
+	color: white;
+	text-decoration: solid;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.volver a:hover{
+	color: white;
+	text-decoration: underline;
+	font-weight: 900;
+	font-size: 18px;
+	text-shadow: 2px 2px 5px #000;
+}
+
+
+.desglose{
+	width: 100%;
+	height: 94%;
+	margin-top: 3%;
+}
+
+.izquierda{
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	float: left;
+}
+
+.derecha{
+	width: 60%;
+	height: 100%;
+	float: left;
+	border: 3px;
+  margin-left: 30%;
+}
+
+.text-opciones {
+    background-color: white;
+    box-shadow: 0;
+    border: none;
+    border-bottom: 2px solid #bebebe;
+    margin-top: 5px;
+    color: black;
+    font-size: 13px;
+    width: 17%;
+    height: 20px;
+    margin-left: 2%;
+}
+
+.btn-opciones {
+    display: inline-block;
+    font-weight: 900;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 11px;
+    line-height: 1.42857143;
+    border-radius: 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+    overflow: hidden;
+    width: auto;
+    margin-left:11%;
+}
+
+.btn-opciones-ver {
+    color: #fff;
+    background-color: #880015;
+    border-color: #f0f0f0;
+}
+
+
+.btn-conf {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 7px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 20%;
+    height: 4.5%;
+    font-family: Quicksand;
+    color: #000000;
+	text-decoration: solid;
+}
+
+.btn-conf-ver {
+    color: #000000;
+    border-color: #000000;
+    color: #000000;
+	text-decoration: solid;
+}
+
+.btn-conf-ver2 {
+    color: #880015;
+    border-color: #880015;
+  text-decoration: solid;
+}
+
+.btn-conf:hover{
+	 color: #000000;
+    border-color: #000000;
+    color: #000000;
+	text-decoration: solid;
+}
+
+.btn-conf-ver:hover{
+    color: #000000;
+    border-color: #000000;
+    color: #000000;
+  text-decoration: solid;
+}
+
+.flotar{
+  float: left;
+  width: 100%;
+}
+
+.link{
+  font-size: 15px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+.link:hover{
+  color: #000;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formulario {
+  /* --------------------------------------- */
+  /* ----- Radio Button */
+  /* --------------------------------------- */
+  /* --------------------------------------- */
+  /* ----- Checkbox */
+  /* --------------------------------------- */ }
+  .formulario h2 {
+    font-size: 16px;
+    color: #001F3F;
+    margin-bottom: 20px;
+    margin-left: 20px; }
+  .formulario > div {
+    padding: 0px 0; }
+  .formulario .radio label,
+  .formulario .checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    color: #880015;
+    position: relative;
+    padding: 5px 0px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover {
+      background: #880015;
+      color: #fff; }
+    .formulario .radio label:before,
+    .formulario .checkbox label:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: none;
+      border: 3px solid #880015; }
+  .formulario input[type="radio"] {
+    display: none; }
+    .formulario input[type="radio"]:checked + label:before {
+      display: none; }
+    .formulario input[type="radio"]:checked + label {
+      padding: 5px ;
+      background: #880015;
+      border-radius: 2px;
+      color: #fff; }
+  .formulario .checkbox label:before {
+    border-radius: 3px; }
+  .formulario .checkbox input[type="checkbox"] {
+    display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label:before {
+      display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label {
+      background: #FF4136;
+      color: #fff;
+      padding: 5px 15px; }

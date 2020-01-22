@@ -1,0 +1,526 @@
+body{
+	padding: 0;
+	margin: 0;
+    font-family: Quicksand !important;
+}
+
+.barra-superior{
+	width: 100%;
+	height: 5%;
+	background-color: #880015;
+	padding-left: 2%;
+	margin-bottom: 5%;
+	  margin-top: 0;
+	  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	  top: 0; /* Posicionamos la cabecera pegada arriba */
+	  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+.bloque-derecho{
+	width: 5%;
+	height: 100%;
+	float: left;
+}
+
+.bloque-izquierdo{
+	width: auto;
+	margin-left: 90%;
+	height: 100%;
+	margin-top: -30px;
+}
+
+.volver{
+	padding-top: 12px;
+}
+
+.volver a{
+	color: white;
+	text-decoration: solid;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.volver a:hover{
+	color: white;
+	text-decoration: underline;
+	font-weight: 900;
+	font-size: 18px;
+	text-shadow: 2px 2px 5px #000;
+}
+
+.contener{
+	width: 100%;
+	height: 95%;
+}
+
+.izquierda{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin-top: 3%;
+	position: fixed;
+	background-image: url(../img/diario1.png);
+	background-repeat: no-repeat;
+	background-size: 89%;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.izquierda2{
+	width: 60%;
+	height: 100%;
+	float: left;
+	margin-top: 3%;
+	position: fixed;
+	margin-top: 3%;
+	margin-left: 2%;
+	background-image: url(../img/diario/diario1.png);
+	background-repeat: no-repeat;
+	background-size: 70%;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+.izquierda2{
+	width: 60%;
+	height: 100%;
+	float: left;
+	margin-top: 3%;
+	margin-top: 3%;
+	margin-left: 2%;
+	position: fixed;
+}
+
+.izquierda3{
+	width: 60%;
+	height: 50%;
+	float: right;
+	margin-top: 3%;
+}
+
+.derecha{
+	width: 50%;
+	height: 100%;
+	float: right;
+	margin-top: 3%;
+}
+
+.derecha2{
+	width: 40%;
+	height: 100%;
+	float: left;
+	margin-top: 3%;
+}
+
+.izquierda2{
+	width: 60%;
+	height: 100%;
+}
+
+.btn-inicio {
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	font-size: 16px;
+	line-height: 1.42857143;
+	border-radius: 7px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-bottom: 15px;
+	overflow: hidden;
+	width: 30%;
+	text-align: center;
+	text-decoration: solid;
+	margin-left: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.btn-inicio-escribir {
+	color: #fff;
+	background-color: #880015;
+	border-color: #f0f0f0;
+}
+
+.btn-inicio-revisar {
+	color: #000;
+	background-color: #d8cfcf;
+	border-color: #d8cfcf;
+}
+
+.bloque-datos{
+	width: 75%;
+	margin-left: 12%;
+	margin-top: 15px;
+}
+
+.bloque-datos hr{
+	border: 0; 
+    border-bottom: 2px solid #880015; 
+    height:0;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.select-dia {
+    margin-top: 15px;
+    width: auto;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    border-color: #fff;
+	font-size: 17px;
+	outline: 0;
+	font-family: Quicksand;
+}
+
+
+.text-datos {
+    background-color: white;
+    box-shadow: 0;
+    border: none;
+    border-bottom: 2px solid #bebebe;
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    width: 50%;
+    height: 30px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    font-family: Quicksand;
+	padding-left: 1%;
+	outline: 0;
+}
+
+.select-etiqueta {
+    margin-top: 15px;
+    width: 50%;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    border-color: #fff;
+	font-size: 17px;
+	outline: 0;
+	font-family: Quicksand;
+	padding-left: 1.5%;
+}
+
+.select-estado {
+    margin-top: 15px;
+    width: 30%;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    border-color: #fff;
+	font-size: 17px;
+	outline: 0;
+	font-family: Quicksand;
+	padding-left: 1.5%;
+	float: right;
+	margin-right: 10%;
+}
+
+.descripcion {
+    background-color: rgb(255,255,255,0.0);
+    margin-top: 1%;
+    margin-left: 12%;
+    margin-bottom: 2%;
+	font-family: Quicksand;
+	outline: 0;
+	width: 72%;
+	height: 50%;
+	color: black;
+	border: 0;
+	padding-left: 2%;
+}
+
+.btn-guardar {
+	position: fixed;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	font-size: 16px;
+	line-height: 1.42857143;
+	border-radius: 7px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	width: auto;
+	text-align: center;
+	text-decoration: solid;
+	padding: 5px;
+}
+
+.btn-guardar-abajo {
+	color: #ffffff;
+	background-color: #880015;
+	font-weight: 900;
+	outline: 0;
+}
+
+
+.modal-open {
+    overflow: hidden
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+	outline: 0;
+	margin-top: 18%;
+	width: 20% !important;
+	margin-left: 40%;
+	font-family: Quicksand;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out, -o-transform .3s ease-out
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+	margin: 10px
+	
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.modal-header .close {
+    margin-top: -2px
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 5px
+}
+
+.modal-footer .btn-group .btn+.btn {
+    margin-left: -1px
+}
+
+.modal-footer .btn-block+.btn-block {
+    margin-left: 0
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+@media (min-width:768px) {
+    .modal-dialog {
+        width: 900px;
+        margin: 30px auto
+    }
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+    .modal-sm {
+        width: 600px;
+    }
+}
+
+@media (min-width:992px) {
+    .modal-lg {
+        width: 900px
+    }
+}
+
+.contenedor-lista{
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	border-radius: 8px;
+	border:  2px #880015 solid !important;
+	position: relative;
+	margin-top: 5%;
+}
+
+.barra-superior-lista{
+	background-color: #ededed;
+	border-radius: 8px 8px 0px 0px;
+	margin-bottom: 10px;
+	border-bottom: 3px solid #880015;
+}
+
+.titulo-diario{
+	font-family: 'Tangerine', cursive;
+	font-weight: 900;
+	font-size: 45px;
+	color: #880015;
+	padding-top: 7px;
+	display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #880015;
+	margin-bottom: -0.5px;
+	margin-left: 7px;
+}
+
+.cantidad-entradas{
+	color: #880015;
+	font-family: Quicksand;
+	margin-left: 7px;
+	margin-top: 3px;
+	font-weight: 900;
+}
+
+
+.select-filtros {
+    width: 20%;
+	height: 40px;
+	margin-left: 5%;
+    background-color: #ffffff;
+	font-size: 13px;
+	outline: 0;
+	font-family: Quicksand;
+	border: 1px solid #880015 !important;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.titulo-lista{
+	width: 80%;
+	margin-left: 10%;
+	border-bottom: 2px solid #bebebe;
+	margin-bottom: 10px;
+	padding-bottom: 23px;
+	color: #880015;
+	font-weight: 700;
+}
+
+.lista{
+	width: 80%;
+	margin-left: 10%;
+	height: 630px;
+	overflow-y: scroll;
+
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.container::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.container::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+.lista::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+
+.lista::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.lista::-webkit-scrollbar-track:hover,
+.lista::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}

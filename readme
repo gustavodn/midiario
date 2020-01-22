@@ -1,0 +1,340 @@
+////////////////////////////////
+Aplicacion: Mi Diario en la Red
+Version: 1.0
+Fecha: Martes 14 Feb 2019
+Desarrollador: Armando Campos <armando@offitecno.com>
+////////////////////////////////
+
+Estructura del Protecto:
+------------------------
+\
+\ admin
+|
+|  \ img
+| |  |_ linea.png
+| |  |_ logofondo.png
+| |  |_ logopaneladministrativo.png
+| |_ admin.css
+| |_ delete_estado.php
+| |_ delete_etiqueta.php
+| |_ index.php
+| |_ inciar.php
+| |_ inicio.php
+| |_ lista_estados.php
+| |_ lista_etiquetas.php
+| |_ lista_usuarios.php
+| |_ logout.php
+| |_ nueva_etiqueta.php
+| |_ nuevo_estado.php
+\ consultas
+| |_ listar_compartidos.php
+| |_ listar_emocional.php
+\ css
+| |_ all.css
+| |_ all.min.css
+| |_ bootstrap.min.css
+| |_ brands.css
+| |_ brands.min.css
+| |_ diario.css
+| |_ fontawesome.css
+| |_ fontawesome.min.css
+| |_ midiario.css
+| |_ opciones.css
+| |_ privados.css
+| |_ public.css
+| |_ regular.css
+| |_ regular.min.css
+| |_ seguidos.css
+| |_ slam.css
+| |_ solid.css
+| |_ solid.min.css
+| |_ svg-with-js.css
+| |_ svg-with-js.min.css
+| |_ v4-shims.css
+| |_ v4-shims.min.css
+|
+\ img
+|
+| \ banderas
+| | |_ AD.png
+| | |_ AE.png
+| | |_ AF.png
+| | |_ AG.png
+| | |_ AI.png
+| | |_ AL.png
+| | |_ AM.png
+| | |_ AO.png
+| | |_ AR.png
+| | |_ AS.png
+| | |_ AT.png
+| | |_ AU.png
+| | |_ AW.png
+| | |_ AZ.png
+| | |_ BA.png
+| | |_ BB.png
+| | |_ BD.png
+| | |_ BE.png
+| | |_ BF.png
+| | |_ BG.png
+| | |_ BH.png
+| | |_ BI.png
+| | |_ BJ.png
+| | |_ BM.png
+| | |_ BN.png
+| | |_ BO.png
+| | |_ br.png
+| | |_ BS.png
+| | |_ BT.png
+| | |_ BW.png
+| | |_ BY.png
+| | |_ BZ.png
+| | |_ CA.png
+| | |_ CC.png
+| | |_ CD.png
+| | |_ CF.png
+| | |_ CG.png
+| | |_ CH.png
+| | |_ CI.png
+| | |_ CK.png
+| | |_ CL.png
+| | |_ CM.png
+| | |_ CN.png
+| | |_ CO.png
+| | |_ CR.png
+| | |_ CU.png
+| | |_ CV.png
+| | |_ CX.png
+| | |_ CY.png
+| | |_ CZ.png
+| | |_ DE.png
+| | |_ DJ.png
+| | |_ DK.png
+| | |_ DM.png
+| | |_ DO.png
+| | |_ DZ.png
+| | |_ EC.png
+| | |_ EE.png
+| | |_ EG.png
+| | |_ EH.png
+| | |_ ER.png
+| | |_ ES.png
+| | |_ ET.png
+| | |_ FI.png
+| | |_ FJ.png
+| | |_ FM.png
+| | |_ FO.png
+| | |_ FR.png
+| | |_ GA.png
+| | |_ GD.png
+| | |_ GE.png
+| | |_ GH.png
+| | |_ GI.png
+| | |_ GL.png
+| | |_ GM.png
+| | |_ GN.png
+| | |_ GQ.png
+| | |_ GR.png
+| | |_ GT.png
+| | |_ GU.png
+| | |_ GW.png
+| | |_ GY.png
+| | |_ HN.png
+| | |_ HR.png
+| | |_ HT.png
+| | |_ HU.png
+| | |_ ID.png
+| | |_ IE.png
+| | |_ IL.png
+| | |_ IN.png
+| | |_ IQ.png
+| | |_ IR.png
+| | |_ IS.png
+| | |_ IT.png
+| | |_ JM.png
+| | |_ JO.png
+| | |_ JP.png
+| | |_ KE.png
+| | |_ KG.png
+| | |_ KH.png
+| | |_ KI.png
+| | |_ KM.png
+| | |_ KN.png
+| | |_ KP.png
+| | |_ KR.png
+| | |_ KW.png
+| | |_ KY.png
+| | |_ KZ.png
+| | |_ LA.png
+| | |_ LB.png
+| | |_ LC.png
+| | |_ LI.png
+| | |_ LK.png
+| | |_ LR.png
+| | |_ LS.png
+| | |_ LT.png
+| | |_ LU.png
+| | |_ LV.png
+| | |_ LY.png
+| | |_ MA.png
+| | |_ MC.png
+| | |_ MD.png
+| | |_ MG.png
+| | |_ MH.png
+| | |_ MK.png
+| | |_ ML.png
+| | |_ MN.png
+| | |_ MP.png
+| | |_ MQ.png
+| | |_ MR.png
+| | |_ MS.png
+| | |_ MT.png
+| | |_ MU.png
+| | |_ MV.png
+| | |_ MW.png
+| | |_ MX.png
+| | |_ MY.png
+| | |_ MZ.png
+| | |_ NA.png
+| | |_ NE.png
+| | |_ NF.png
+| | |_ NG.png
+| | |_ NI.png
+| | |_ NL.png
+| | |_ NO.png
+| | |_ NP.png
+| | |_ NR.png
+| | |_ NU.png
+| | |_ NZ.png
+| | |_ OM.png
+| | |_ PA.png
+| | |_ pe.png
+| | |_ PF.png
+| | |_ PG.png
+| | |_ PH.png
+| | |_ PK.png
+| | |_ PL.png
+| | |_ PN.png
+| | |_ PR.png
+| | |_ PT.png
+| | |_ PY.png
+| | |_ RO.png
+| | |_ RU.png
+| | |_ RW.png
+| | |_ SA.png
+| | |_ SB.png
+| | |_ SC.png
+| | |_ SD.png
+| | |_ SE.png
+| | |_ SG.png
+| | |_ SI.png
+| | |_ SK.png
+| | |_ SL.png
+| | |_ SM.png
+| | |_ SN.png
+| | |_ SO.png
+| | |_ SR.png
+| | |_ ST.png
+| | |_ SV.png
+| | |_ SY.png
+| | |_ SZ.png
+| | |_ TC.png
+| | |_ TD.png
+| | |_ TG.png
+| | |_ TH.png
+| | |_ TJ.png
+| | |_ TM.png
+| | |_ TN.png
+| | |_ TO.png
+| | |_ TP.png
+| | |_ TR.png
+| | |_ TT.png
+| | |_ TV.png
+| | |_ TW.png
+| | |_ TZ.png
+| | |_ UA.png
+| | |_ UG.png
+| | |_ UK.png
+| | |_ US.png
+| | |_ UY.png
+| | |_ UZ.png
+| | |_ VA.png
+| | |_ VC.png
+| | |_ VE.png
+| | |_ VG.png
+| | |_ VI.png
+| | |_ VN.png
+| | |_ VU.png
+| | |_ WS.png
+| | |_ YE.png
+| | |_ ZA.png
+| | |_ ZM.png
+| | |_ ZW.png
+|
+| \ confidentes
+| | |_ DEJAR-DE-SEGUIR.png
+| | |_ ESPERA.png
+| | |_ NUEVO.png
+| | |_ POR-APROBAR.png
+|
+| \ diario
+| | |_ diario1.png
+| | |_ diario2.png
+| | |_ diario3.png
+| | |_ diariomodificado.png
+| | |_ logo.png
+| | |_ marca-de-agua.png
+| | |_ minilogoblanco.png
+| | |_ pplantilla-chrome2.png
+| | |_ texto.png
+|
+| \ etiqueta
+| | |_ fondo.png
+| | |_ inicio.png
+|
+| \ iconos
+| | |_ cmn.png
+| | |_ mg_act.png
+| | |_ mg.png
+| | |_ nmg_act.png
+| | |_ nmg.png
+| | |_ rpt_act.png
+| | |_ rpt.png
+|
+| \ menu
+| \ menu derecha etiquetas
+| \ opciones
+| \ opciones_sup
+| \ sexos
+| \ signosimg
+| \ signostext
+| |_ slam.png
+| |_ sobremi.png
+| |_ suspendida.png
+| |_ textocon-pluma.png
+| |_ texto.png
+| |_ textoslam_ver.png
+| |_ usuario_mal.png
+| |_ confidentes.png
+| |_ dejar-de-seguir.png
+| |_ diario1.png
+| |_ diario.png
+| |_ fav_act.png
+| |_ favoritos.png
+| |_ fav.png
+| |_ ico_plu.png
+| |_ ladoderecho.png
+| |_ logoizquierdo.png
+| |_ logopluma.png
+| |_ logo.png
+| |_ logout.png
+| |_ mensajes-inactivo.png
+| |_ mg_act.png
+| |_ mg.png
+| |_ nmg_act.png
+| |_ nmg.png
+| |_ opc.png
+| |_ privado.png
+| |_ reportarinactivo.png
+| |_ reportar.png
+| |_ seguidores.png
+| |_ seguidos.png
